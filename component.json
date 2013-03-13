@@ -1,0 +1,6 @@
+{
+  "name": "affix",
+  "description": "Make an element fixed when it reaches the top of the window",
+  "version": "0.0.1",
+  "scripts": ["index.js"]
+}
