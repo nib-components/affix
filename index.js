@@ -2,7 +2,12 @@ function Affix(el, options) {
   _.bindAll(this, '_onWindowScroll');
   this._onWindowScroll = _.throttle(this._onWindowScroll, 50);
   this.el = $(el);
-  this.scrollPoint = this.el.offset().top;
+  this.options = options || {};
+  if (this.options.offset){
+    this.scrollPoint = this.el.offset().top - this.options.offset;
+  } else {
+    this.scrollPoint = this.el.offset().top;
+  }
   this.isFixed = false;
   this.window = $(window);
   this.window.on('scroll', this._onWindowScroll);
