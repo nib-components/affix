@@ -1,0 +1,10 @@
+{
+  "name": "@nib-components/affix",
+  "version": "0.0.2",
+  "description": "Make an element fixed when it reaches the top of the window",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nib-components/affix.git"
+  }
+}
